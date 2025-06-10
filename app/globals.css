@@ -116,6 +116,15 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -125,6 +134,32 @@ body {
   }
 
   .link {
-    @apply hover:underline decoration-primary underline-offset-5 decoration-3 transition-all text-muted-foreground hover:text-foreground;
+    @apply transition-all text-muted-foreground hover:text-foreground;
+  }
+  .website-margin {
+    @apply px-[10%];
+  }
+
+  .about-margins {
+    @apply lg:w-[80ch] w-full lg:px-0 md:px-10 px-1;
+  }
+}
+
+@layer utilities {
+  @keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-carousel {
+    animation: carousel 25s linear infinite;
+  }
+
+  .fast-animation {
+    animation-duration: 100s;
+  }
+
+  .carousel-gradient {
+    @apply lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] [mask-image:_linear-gradient(to_right,transparent_0,_black_32px,_black_calc(100%-32px),transparent_100%)];
   }
 }
