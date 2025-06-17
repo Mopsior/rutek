@@ -5,7 +5,7 @@ export const Footer = () => (
     <footer className="py-10 bg-background text-muted-foreground/80 website-margin border-t mt-20">
         <div className="md:grid md:grid-cols-2">
             <div className="*:mt-0.5">
-                <h3 className="text-4xl font-extrabold tracking-tight lg:text-5xl">SEO-Install</h3>
+                <h3 className="text-4xl font-extrabold tracking-tight lg:text-5xl">SEO-Instal</h3>
                 <p className="!mt-4">SEO - instal ŁUKASZ TRZNADEL</p>
                 <p>NIP: 9291641724</p>
                 <p>REGON: 080089733</p>

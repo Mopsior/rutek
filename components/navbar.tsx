@@ -12,7 +12,7 @@ export const Navbar = () => {
             <Link href="/">
                 <div className="flex gap-x-2 items-center">
                     <Fan className="text-primary md:inline hidden" />
-                    <p className="text-lg font-semibold text-foreground md:text-primary">SEO-Install</p>
+                    <p className="text-lg font-semibold text-foreground md:text-primary">SEO-Instal</p>
                 </div>
             </Link>
             <div className="md:flex gap-x-8 hidden">
@@ -40,7 +40,7 @@ const MobileMenu = () => (
             <DrawerHeader>
                 <DrawerTitle className="text-4xl font-extrabold tracking-tight text-primary text-center" asChild>
                     <Link href={"/"}>
-                        SEO-Install
+                        SEO-Instal
                     </Link>
                 </DrawerTitle>
                 <DialogDescription></DialogDescription>

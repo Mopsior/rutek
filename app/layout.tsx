@@ -15,34 +15,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "SEO-Install - Serwis wentylacji i klimatyzacji"
+const title = "SEO-Instal - Serwis wentylacji i klimatyzacji"
 const description = "Polski serwis wentylacji i klimatyzacji z wieloletnim doświadczeniem. Najlepsi w swoim fachu."
 
 export const metadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-install.pl'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-instal.pl'),
     title: title,
     description: description,
     keywords: [
-        "SEO-Install",
+        "SEO-Instal",
         "wentylacja",
         "klimatyzacja",
         "serwis",
         "instalacja",
         "usługi",
+        "Seo-Install",
+        "install"
     ],
     openGraph: {
         title: title,
         type: 'website',
         description: description,
-        url: process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-install.pl',
+        url: process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-instal.pl',
         siteName: title,
-        images: [`${process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-install.pl'}/thumbnail.png`]
+        images: [`${process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-instal.pl'}/thumbnail.png`]
     },
     twitter: {
-        site: process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-install.pl',
+        site: process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-instal.pl',
         title: title,
         description: description,
-        images: [`${process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-install.pl'}/thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_DOMAIN || 'https://seo-instal.pl'}/thumbnail.png`],
         card: 'summary_large_image'
     }
 }
