@@ -20,6 +20,5 @@ export const Footer = () => (
                 </p>
             </div>
         </div>
-        <p className="mt-8 text-center">Strona zrobiona przez <Link href="https://github.com/mopsior" className="link underline underline-offset-3 decoration-1">@mopsior</Link></p>
     </footer>
 )
